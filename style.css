@@ -1,0 +1,15 @@
+ *{
+    margin: 0px 0px;
+ } 
+ body{
+    font-family:monospace;
+ } 
+.header-image {
+    background-image: url(SWIN-website-Banners-Pathway-Base.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 10%;
+    }
+p{
+    text-align: justify;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Best Players Select</title>
+    <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/2642/premium/2642160.png?token=exp=1661261608~hmac=1d0127b518030f96300a8082e3950afa" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://kit.fontawesome.com/25a5041dcf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="banner mb-14" >
+        <div class="header-image">
+            <h1 class="text-5xl	text-center pt-44  mb-2">World Best Players Select  <i class="fa-solid fa-flag"></i></h1>
+            <p class="text-center text-3xl">Make vows piastress and namaz with you when you <br> show your  heart like priya you earn me money <br>am with you we think dot com</p>
+            <img class="relative w-40   -mt-14  " src="https://cdn-icons-png.flaticon.com/512/8306/8306137.png" alt="" srcset="">
+           
+            </div>            
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-4 gap-x-10 gap-y-7	 mx-10">
+                <div class="card w-83 	h-96 bg-base-100 shadow-xl">
+                    <figure><img class="h-48     w-96" src="https://i.insider.com/625e97fb4f524b00194d1ed0?width=600&format=jpeg&auto=webp" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" text-center text-5xl mb-5">Ronaldo</h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="nameadd(this)" class="btn btn-primary text-3xl px-10"> SELECT </button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-83 	h-96 bg-base-100 shadow-xl">
+                    <figure><img class="h-48   w-96" src="https://wallpapercrafter.com/th800/29598-Lionel-Messi-Barcelona-FCB-soccer-4K.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" text-center text-5xl mb-5">Messi</h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="nameadd(this)"  class="btn btn-primary text-3xl px-10">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-83 	h-96 bg-base-100 shadow-xl">
+                    <figure><img class="h-48     w-96" src="https://www.sportsunfold.com/wp-content/uploads/2022/01/image-2022-01-08T151234.020.jpg.webp" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" text-center text-5xl mb-5">Neymar</h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="nameadd(this)" class="btn btn-primary text-3xl px-10">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-83  bg-base-100 shadow-xl p-5">
+                    <h1 class="text-2xl text-center">Totale Players:<span class="text-blue-600" id="totale-name">0</span></h1>
+                    <hr>
+                    <h1 class="text-2xl text-center mb-3">Selected - V</h1>
+                    <ul id="add-li" class=" ml-10 no-underline">
+
+                    </ul> 
+                  </div>
+                  <div class="card w-83 	h-96 bg-base-100 shadow-xl">
+                    <figure><img class="h-48     w-96" src="https://i.insider.com/5de51779fd9db20d6d6fd883?width=1300&format=jpeg&auto=webp" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" text-center text-5xl mb-5">Thomas</h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="nameadd(this)" class="btn btn-primary text-3xl px-10">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-83 	h-96 bg-base-100 shadow-xl">
+                    <figure><img class="h-48     w-96" src="https://i.insider.com/5de51607fd9db20e235412f2?width=1300&format=jpeg&auto=webp" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" text-center text-5xl mb-5">Kieren</h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="nameadd(this)" class="btn btn-primary text-3xl px-10">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-83 	h-96 bg-base-100 shadow-xl">
+                    <figure><img class="h-48     w-96" src="https://i.insider.com/5dfa100e71a5ca68825127c3?width=1300&format=jpeg&auto=webp" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class=" text-center text-5xl mb-5">Julian</h2>
+                      <div class="card-actions justify-center">
+                        <button onclick="nameadd(this)" class="btn btn-primary text-3xl px-10">SELECT</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-83  bg-base-100 shadow-xl p-5">
+                    <h1 class="text-5xl text-center mb-2">Budget</h1>
+                    <hr class="mb-3">
+                    <div class="flex mb-4">
+                        <h1 class="text-2xl ">Per Player:</h1>
+                    <input id="per-player" type="text" placeholder="number" class="input input-bordered input-sm w-24
+                    - max-w-xs font-semibold	"/>
+                    </div>
+                    <button id="btn-calculate" class="btn btn-primary text-3xl px-8 mb-3">Calculate</button>
+                    <h1 class="text-2xl text-center mb-3">Player Expenses: $<span id="players-sum">0</span>$</h1>
+
+                    <div class="flex mb-4">
+                        <h1 class="text-2xl mr-4">Manager:</h1>
+                    <input id="manager-input" type="text" placeholder="number" class="input input-bordered input-sm w-24
+                    - max-w-xs font-semibold	"/>
+                    </div>
+                    <div class="flex mb-5">
+                        <h1 class="text-2xl mr-11">Coach:</h1>
+                    <input id="coach-input"  type="text" placeholder="number" class="input input-bordered input-sm w-24
+                    - max-w-xs font-semibold"/>
+                    </div>
+                    <button id="calculat-total" class="btn btn-primary text-xl	tracking-wider px-8 mb-3">Calculate Total</button>
+                    <div>
+                        <h1 class="text-center text-3xl ">Total:  $<span id="totale-taka">0000</span></h1>
+                      </div>
+                  </div>  
+             </div>
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+    <script src="culculater.js"></script>
+</body>
+</html>
